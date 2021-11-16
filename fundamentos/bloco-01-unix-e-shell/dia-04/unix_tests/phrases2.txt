@@ -1,0 +1,7 @@
+Estou recapitulando bash
+Este e um arquivo de frases
+Contendo frases aleatorias
+Depois vou buscar pelas letras br
+A trybe e a melhor escola de programacao do Brasil
+Brasil
+Argentina

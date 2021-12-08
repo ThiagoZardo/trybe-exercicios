@@ -1,0 +1,37 @@
+body{
+    font-size: 16px;
+  }
+  
+  h1{
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+    text-decoration: black;
+    text-align: center;
+  }
+
+  li{
+    background-color: rgb(0, 255, 200);
+    line-height: 30px;
+  }
+
+  .corAlternada{
+    background-color: blueviolet;
+  }  
+
+  p{
+    font-weight: 600px;
+    font-size: 3em;
+  }
+
+  .pAmarelo{
+    color: yellow;
+  }
+
+  .pVermelho{
+    color: red;
+  }
+
+  .pMarrom{
+    color: brown;
+  }

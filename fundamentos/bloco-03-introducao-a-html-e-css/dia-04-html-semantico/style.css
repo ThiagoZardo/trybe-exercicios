@@ -1,0 +1,218 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Classes auxiliares*/
+
+.clear{
+  clear: both;
+}
+
+header{
+  background-color: black;
+  padding: 15px;
+}
+
+header h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: yellow;
+}
+
+.menu-desktop ul{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.menu-desktop li{
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 22px;
+}
+
+.menu-desktop a{
+  color: white;
+  text-decoration: none;
+}
+
+.menu-desktop a:hover{
+  color: rgb(231, 220, 220);
+}
+
+/*Main*/
+
+.container{
+  margin: 0 auto;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.informacoes-principais{
+  padding: 20px 0 100px 0;
+}
+
+.informacoes-principais h2{
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  color: blueviolet;
+}
+
+.informacoes-principais p, .informacoes-principais h3{
+  display: inline-block;
+  width: 50%;
+  padding: 0 10px;
+  font-size: 22px;
+  text-align: right;
+}
+
+.informacoes-principais img{
+  width: 300px;
+  float: right;
+}
+
+/*Informacoes Tabulares*/
+
+table, tr, td{
+  margin: 50px auto;
+  border: 1px solid black;
+  clear: both;
+}
+
+.informacoes-tabulares td{
+  padding: 0 20px;
+}
+
+.informacoes-tabulares h4{
+  text-align: center;
+}
+
+/*Olhos*/
+
+.olhos {
+  padding: 100px 0 50px 0;
+}
+
+
+.olhos p, .olhos h3{
+  display: inline-block;
+  width: 50%;
+  padding: 0 10px;
+  font-size: 22px;
+  text-align: left;
+}
+
+.olhos img{
+  width: 400px;
+  float: left;
+}
+
+
+/*Camarão Satélite*/
+
+.camarao-satelite {
+
+  padding: 100px 0 50px 0;
+}
+
+
+.camarao-satelite p, .camarao-satelite h3{
+  display: inline-block;
+  width: 50%;
+  padding: 0 10px;
+  font-size: 22px;
+  text-align: right;
+}
+
+.camarao-satelite img{
+  width: 400px;
+  float: right;
+}
+
+
+/*Soco Mais Forte*/
+
+.soco-mais-forte {
+  padding: 150px 0 150px 0;
+}
+
+
+.soco-mais-forte p, .soco-mais-forte h3{
+  display: inline-block;
+  width: 50%;
+  padding: 0 10px;
+  font-size: 22px;
+  text-align: left;
+}
+
+.soco-mais-forte img{
+  width: 400px;
+  float: left;
+}
+
+/*Video*/
+
+.videos{
+  padding: 10px 0 10px 0;
+  clear: both;
+}
+
+.videos h4{
+  padding: 35px 10px;
+  font-size: 22px;
+  text-align: center;
+  color: red;
+}
+
+
+/*Referencias*/
+
+
+.referencias{
+  padding: 30px 0 50px 0;
+}
+
+.materias, .ref-imagens{
+  display: inline-block;
+  padding: 20px 50px;
+} 
+
+.ref-imagens a{
+  padding: 5px;
+}
+
+.referencias ul{
+  list-style: none;
+}
+
+/*Footer*/
+
+footer{
+  background-color: BLACK;
+  width: 100%;
+  height: 80px;
+}
+
+footer p{
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+footer a{
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -161,3 +161,7 @@
   .sextou{
     display: block;
   }
+
+  .zoom{
+    transform: scale(1.8);
+  }

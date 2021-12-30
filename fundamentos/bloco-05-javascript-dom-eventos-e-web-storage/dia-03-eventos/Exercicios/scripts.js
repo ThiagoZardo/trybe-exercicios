@@ -67,8 +67,10 @@ const txtbuttonSexta = document.createTextNode('Sexta-feira');
 buttonSexta.appendChild(txtbuttonSexta);
 buttonsContainer.appendChild(buttonSexta);
 buttonSexta.id = 'btn-friday';
-buttonSexta.addEventListener('click', exibeSextou);
 
+
+//Exercicio 5
+buttonSexta.addEventListener('click', exibeSextou);
 let friday = document.getElementsByClassName('friday');
 let dezFriday = [4, 11, 18, 25];
 let sextou = 'Sextou o/';
@@ -84,4 +86,15 @@ function exibeSextou(fridayArray){
     }
 }
 
+//Exercicio 6
+for(let i = 0; i < day.length; i+=1){
+    day[i].addEventListener('mouseenter', darZoom);
+}
 
+function darZoom(event){
+    for(let i = 0; i < day.length; i+=1){
+        event.target.style.transform='scale(1.8)';
+        day[i].style.transform='scale(1)';
+        day[i].style.cursor='pointer';
+    }
+}

@@ -98,3 +98,16 @@ function darZoom(event){
         day[i].style.cursor='pointer';
     }
 }
+
+//Exercicio 7
+
+function adcionaTarefa(Nometarefa){
+    let myTasks = document.getElementsByClassName('my-tasks')[0];
+    let span = document.createElement('span');
+    span.innerHTML = Nometarefa;
+    myTasks.appendChild(span);
+}
+
+adcionaTarefa();
+
+//Exercicio 8

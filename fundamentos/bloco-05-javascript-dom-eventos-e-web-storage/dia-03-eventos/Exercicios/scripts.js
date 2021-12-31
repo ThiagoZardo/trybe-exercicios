@@ -112,11 +112,18 @@ function adcionaTarefa(Nometarefa){
 adcionaTarefa();
 
 //Exercicio 8
-function adcionaLegenda(color){
+function adcionaCor(color){
     let div = document.createElement('div');
     div.classList.add('task');
     div.style.backgroundColor = color;
     myTasks.appendChild(div);
+    div.addEventListener('click', classeSelected);
 }
 
-adcionaLegenda("red");
+adcionaCor("red");
+
+//Exercicio 9
+function classeSelected(event){
+    event.target.classList.add('task');
+    event.target.classList.toggle('selected')
+}

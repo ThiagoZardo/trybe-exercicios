@@ -101,8 +101,9 @@ function darZoom(event){
 
 //Exercicio 7
 
+let myTasks = document.getElementsByClassName('my-tasks')[0];
+
 function adcionaTarefa(Nometarefa){
-    let myTasks = document.getElementsByClassName('my-tasks')[0];
     let span = document.createElement('span');
     span.innerHTML = Nometarefa;
     myTasks.appendChild(span);
@@ -111,3 +112,11 @@ function adcionaTarefa(Nometarefa){
 adcionaTarefa();
 
 //Exercicio 8
+function adcionaLegenda(color){
+    let div = document.createElement('div');
+    div.classList.add('task');
+    div.style.backgroundColor = color;
+    myTasks.appendChild(div);
+}
+
+adcionaLegenda("red");

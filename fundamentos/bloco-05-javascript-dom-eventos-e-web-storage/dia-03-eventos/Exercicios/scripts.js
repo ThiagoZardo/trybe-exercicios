@@ -103,14 +103,13 @@ function darZoom(event){
 //Exercicio 7
 
 let myTasks = document.getElementsByClassName('my-tasks')[0];
+let span = document.createElement('span');
 
 function adcionaTarefa(Nometarefa){
-    let span = document.createElement('span');
-    span.innerHTML = Nometarefa;
     myTasks.appendChild(span);
 }
 
-adcionaTarefa();
+
 
 //Exercicio 8
 function adcionaCor(color){
@@ -131,11 +130,26 @@ function classeSelected(event){
 }
 
 //Exercicio 10
-
-
 function selecionaDia(event){
     for(let i = 0; i < day.length; i+=1){
         event.target.style.color = color;
     }
 };
 
+//Bônus
+
+let btnAdd = document.getElementById('btn-add');
+btnAdd.addEventListener('click', insereCompromisso);
+
+function insereCompromisso(){
+    let taskInput = document.getElementById('task-input').value;
+    if(taskInput == "" || taskInput == " " ) {
+        alert("Digite uma tarefa antes");
+    }else{
+        let br = document.createElement('br');
+        span.innerHTML += taskInput;
+        span.appendChild(br);
+        document.getElementById('task-input').value = '';
+    }    
+}
+adcionaTarefa(span);

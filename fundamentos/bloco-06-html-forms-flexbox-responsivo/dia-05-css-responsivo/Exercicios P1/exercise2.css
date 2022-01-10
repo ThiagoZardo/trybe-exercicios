@@ -96,8 +96,29 @@ footer h3{
 
     .asides ul li{
         list-style-type: none;
+    }    
+}
+
+@media screen and (min-width:1024px){
+
+    .paragrafos{
+        margin: 0 5%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
 
-    
-    
+    .paragrafos h1{
+        text-align: center;
+    }
+
+    .p-left{
+        width: 45%;
+        text-align: left;
+    }
+
+    .p-rigth{
+        width: 45%;
+        text-align: left;
+    }    
 }

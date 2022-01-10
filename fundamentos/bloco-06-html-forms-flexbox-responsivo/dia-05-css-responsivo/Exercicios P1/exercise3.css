@@ -84,3 +84,51 @@ body {
           display: none;
       }
   }
+
+
+  @media screen and (max-width:468px){
+
+    body{
+        padding: 0;
+    }
+
+    #header{
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+    }
+
+    h2{
+        z-index: 3;
+        position: relative;
+        top: 70px;
+    }
+
+    #content img{
+        max-width: 150%;
+        padding: 70px 2%;
+    }
+      
+    #aside{
+        display: none;
+    }
+
+    #navigation{
+        position: relative;
+        top: 77px;
+        display: flex;     
+    }
+
+    #navigation ul{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navigation li a {
+        border: 0;
+    }
+
+
+
+  }

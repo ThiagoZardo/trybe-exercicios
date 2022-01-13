@@ -27,3 +27,12 @@ const longestWord = (frase) => {
 console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
 */
 
+//Exercicio 03
+
+const btnEnviar = document.getElementById('btn-enviar');
+let clicou = document.getElementById('clicou');
+let contador = 0;
+btnEnviar.addEventListener('click', () => {
+  contador += 1;
+  clicou.innerText = contador;
+})

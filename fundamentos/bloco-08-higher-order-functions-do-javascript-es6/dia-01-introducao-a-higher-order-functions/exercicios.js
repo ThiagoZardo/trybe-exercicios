@@ -25,12 +25,12 @@ console.log(newEmployees(dados));
 
 
 const confereResultado = (meuJogo, resultado) => {
-  meuJogo === resultado;
+  return meuJogo === resultado;
 }
 
-const sorteio = (meuJogo, confereResultado) => {
+const sorteio = (meuJogo, callback) => {
   const number = Math.floor((Math.random() * 5) + 1);
-  if(meuJogo === number) {
+  if(callback(meuJogo, number)) {
     return 'Parabéns você ganhou';
   } else {
     return 'Tente novamente';

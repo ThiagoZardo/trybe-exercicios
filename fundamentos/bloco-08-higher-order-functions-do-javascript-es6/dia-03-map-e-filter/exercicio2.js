@@ -61,14 +61,16 @@ const books = [
   },
 ];
 
-const nameAndAge =() => {
+const nameAndAge =(callBack) => {
   // escreva seu código aqui
-  return books.map((book) => (
+  return callBack.map((book) => (
     {
       author: book.author.name,
       age: book.releaseYear - book.author.birthYear, 
     }
-  ))
+
+    ))
+    .sort((a, b) => a.age - b.age);
 }
 
-console.log(nameAndAge());
+console.log(nameAndAge(books));

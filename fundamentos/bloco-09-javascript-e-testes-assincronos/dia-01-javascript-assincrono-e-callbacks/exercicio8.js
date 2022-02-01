@@ -40,7 +40,7 @@ const funcCallback = (param1, param2) => {
   if (!param2) {
     console.log(param1);
   }
-}
+};
 
 getPokemonDetails(undefined, funcCallback);
 

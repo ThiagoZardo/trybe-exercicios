@@ -1,5 +1,5 @@
 // apiScript.js Url da API guardada em uma variavel
-const API_URL = 'https://api.chucknorris.io/jokes/random?category=dev';
+const API_URL = 'https://icanhazdadjoke.com/';
 
 // Objeto de acordo com a API
 const myObject = {

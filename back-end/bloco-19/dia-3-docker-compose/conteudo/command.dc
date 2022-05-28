@@ -1,0 +1,8 @@
+docker-compose up # Rodar o docker-compose
+docker-compose down #Pausar o docker-compose
+docker-compose ps
+docker-compose stop
+docker-compose stop <SERVICE NAME>
+docker-compose stop backend
+docker-compose start
+docker-compose logs -f --tail=100 <SERVICE NAME>

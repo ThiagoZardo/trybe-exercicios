@@ -1,0 +1,43 @@
+version: "3.8"
+services:
+  web:
+    image: nginx:alpine
+    volumes:
+      - type: volume
+        source: mydata
+        target: /data
+        volume:
+          nocopy: true
+      - type: bind
+        source: ./static
+        target: /opt/app/static
+
+  db:
+    image: postgres:latest
+    volumes:
+      - "/var/run/postgres/postgres.sock:/var/run/postgres/postgres.sock"
+      - "dbdata:/var/lib/postgresql/data"
+
+volumes:
+  mydata:
+  dbdata:
+
+## Outro exemplo agora com redes
+
+  <MEU-CONTAINER-1>:
+    image: <MINHA-IMAGEM:VERSÃO>
+    networks:
+      - <NETWORK-1>
+    # ... outras configurações
+  <MEU-CONTAINER-2>:
+    build: <CAMINHO-DO-DOCKERFILE>
+    networks:
+      - <NETWORK-1>
+      - <NETWORK-1>
+    # ... outras configurações
+  <MEU-CONTAINER-N>:
+    image: <MINHA-IMAGEM:VERSÃO>
+    # ... outras configurações
+
+networks:
+  <NETWORK-1>:

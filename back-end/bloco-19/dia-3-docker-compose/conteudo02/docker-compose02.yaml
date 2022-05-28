@@ -1,0 +1,19 @@
+version: "<VERSÃO-DO-COMPOSE>"
+services:
+  <MEU-CONTAINER-1>:
+    image: <MINHA-IMAGEM:VERSÃO>
+    networks:
+      - <NETWORK-1>
+    # ... outras configurações
+  <MEU-CONTAINER-2>:
+    build: <CAMINHO-DO-DOCKERFILE>
+    networks:
+      - <NETWORK-1>
+      - <NETWORK-1>
+    # ... outras configurações
+  <MEU-CONTAINER-N>:
+    image: <MINHA-IMAGEM:VERSÃO>
+    # ... outras configurações
+
+networks:
+  <NETWORK-1>:

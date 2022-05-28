@@ -1,0 +1,21 @@
+version: "3" # <VERSÃO-DO-COMPOSE>
+services: # Definição dos containers
+  frontend: # <MEU-CONTAINER-1>:
+    image: mjgargani/compose-example:frontend-trybe1.0 # carrega uma imagem já _buildada_
+    restart: always # sempre que o serviço parar, ele irá ser reiniciado
+    ports:
+      - 3000:3000 # O primeiro é a porta do host e o segundo a porta do contêiner.
+    depends_on: # estabelecer dependências entre os serviços.
+      - "backend"
+  backend: # <MEU-CONTAINER-2>:
+    image: mjgargani/compose-example:backend-trybe1.0
+    restart: always
+    ports:
+      - 3001:3001
+    environment: # variáveis de ambiente de nossos contêineres.
+      - DB_HOST=database
+    depends_on:
+      - "database"
+  database: # <MEU-CONTAINER-3>:
+    image: mjgargani/compose-example:database-trybe1.0
+    restart: always
